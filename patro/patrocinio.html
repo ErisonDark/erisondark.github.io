@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="stylesheet" href="patro.css">
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script scr="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</head>
+<br>
+<br>
+</br>
+</br>
+<h1 style="font-size: 7.5vmin!important; margin-top: -6vh; font-family: 'Dagger Square'!important; color: white">Patrocinador</h1>
+
+<p style="font-family: 'Dagger Square'; color: #f3ea5f; font-size: 3vmin"> Estamos ansiosos para trabalhar com você. Entre em contato conosco caso tenha interesse em patrocinar com o valor que desejar, logo abaixo está o valor opcional.</p>
+<div class="center">
+  <button class="contact"><a style="text-decoration: none" href="mailto:0nec4t@gmail.com?subject=Tenho interesse em patrocínio de @Edivaldo218">Cantate-nos</a></button>
+</div>
+
+<div id="container">
+  <div id="tier1">
+
+    <h2>Clique em abrir</h2>
+    <p class="specialText2"> R$ 200 </p>
+    <div class="center">
+      <button class="open" onclick="tier1()">Abrir</button>
+    </div>
+
+
+  </div>
+
+  <div id="tier2">
+    <div id="colorTier2"></div>
+
+
+    <h2>Clique em abrir</h2>
+    <p class="specialText2"> R$ 800 </p>
+    <div class="center">
+      <button class="open" onclick="tier2()">Abrir</button>
+    </div>
+
+  </div>
+
+  <div id="tier3">
+    <div id="colorTier3"></div>
+
+    <h2>Clique em abrir</h2>
+    <p class="specialText2"> R$ 1000</p>
+    <div class="center">
+      <button class="open" onclick="tier3()">Abrir</button>
+    </div>
+
+  </div>
+
+
+  <div id="detailsTier1" style="display: none">
+    <div id="contextTier1">
+      <div class="center">
+        <h2>R$200</h2>
+      </div>
+      <p class="specialText">Patrocinador!</p>
+      <p> Seguintes vantagens! </p>
+      <ul>
+        <li> Divulgação da sua empresa no Canal </li>
+        <li> 6 Min do anúncio do seu app/site </li>
+        <li> Link da página para tal empresa no canal</li>
+      </ul>
+      <div class="center">
+        <button class="close" onclick="buttonClose1()"> close door </button>
+        <a id="contact" href="mailto:0nec4t@gmail.com?subject=Tenho interesse em patrocínio de @Edivaldo218. Valor a ser pago de R$ 1000">Aceito</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="detailsTier2" style="display: none">
+    <div id="contextTier2">
+      <div class="center">
+        <h2>R$800</h2>
+      </div>
+      <p class="specialText">Patrocinador!</p>
+      <ul>
+        <li> Divulgação da sua empresa no Canal </li>
+        <li> 6 Min de anúncio do seu app/site em 3 videos </li>
+        <li> Link para tal empresa no canal e nas redes sociais </li>
+      </ul>
+      <div class="center">
+        <button class="close" onclick="buttonClose2()"> close door </button>
+        <a id="contact" href="mailto:0nec4t@gmail.com?subject=Tenho interesse em patrocínio de @Edivaldo218. Valor a ser pago de R$ 1000">Aceito</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="detailsTier3" style="display: none">
+    <div id="contextTier3">
+      <div class="center">
+        <h2>R$ 1000</h2>
+      </div>
+      <p class="specialText">Patrocinador!</p>
+      <ul>
+        <li> Divulgação da sua empresa no Canal </li>
+        <li> 6 Min de anúncio do seu app/site em 3 mês </li>
+        <li> Link para tal empresa no canal e nas redes sociais </li>
+      </ul>
+      <div class="center">
+        <button class="close" onclick="buttonClose3()"> close door </button>
+        <a id="contact3" href="mailto:0nec4t@gmail.com?subject=Tenho interesse em patrocínio de @Edivaldo218. Valor a ser pago de R$ 1000">Aceito</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</html>
+
+<script>
+function tier1(){
+      var x = document.getElementById("detailsTier1");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+          x.style.display = "none";
+      }
+  }
+
+  function buttonClose1() {
+      var x = document.getElementById("detailsTier1");
+      x.style.display = "none";
+  }
+
+  function tier2(){
+      var x = document.getElementById("detailsTier2");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+          x.style.display = "none";
+      }
+  }
+
+  function buttonClose2() {
+      var x = document.getElementById("detailsTier2");
+      x.style.display = "none";
+  }
+
+  function tier3(){
+      var x = document.getElementById("detailsTier3");
+      if (x.style.display === "none") {
+      x.style.display = "block";
+      } else {
+          x.style.display = "none";
+      }
+  }
+
+  function buttonClose3() {
+      var x = document.getElementById("detailsTier3");
+      x.style.display = "none";
+  }
+
+</script>

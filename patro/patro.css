@@ -1,0 +1,214 @@
+html{
+    background-image: linear-gradient(to right,black , black);
+    text-align: center;
+    justify-items: center;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    width:70%;
+    margin-left: 15%;
+    margin-top: -10vh;
+}
+
+#tier1, #tier2, #tier3{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+    color: black;
+    height: 15%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    background-color: white;
+}
+
+#tier1{
+    display: block;
+    border-radius: 0.25rem;
+    margin-top: 5%;
+    background-color: #92D4E7;
+}
+
+#tier1:hover {
+    transform: scale(1.1);
+    filter: brightness(120%);
+}
+
+
+#tier2{
+    display: block;
+    border-radius: 0.25rem;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #F3EA5F;
+
+}
+
+#tier2:hover {
+    transform: scale(1.1);
+    filter: brightness(120%);
+}
+
+
+#tier3{
+    display: block;
+    border-radius: 0.25rem;
+    background-color: #70C86B;
+    margin-top: 5%;
+}
+
+#tier3:hover {
+    transform: scale(1.1);
+    filter: brightness(120%);
+}
+
+p.specialText {
+    color: rgb(79, 27, 223);
+    font-style: italic;
+    font-family: 'Dagger Square';
+}
+
+p.specialText2 {
+    color: rgb(79, 27, 223);
+    font-family: 'Dagger Square';
+    font-size: 45px;
+}
+
+p{
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    font-family: Lazer84;
+    letter-spacing: .5vmin;
+}
+
+
+img{
+    height: 200px;
+    width: 200px;
+}
+
+
+button{
+    margin: 5%;
+    background-color: rgb(207, 43, 194);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 2px solid rgb(207, 43, 194);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: .3s;
+    font-family: abel;
+}
+
+button:hover{
+    opacity: 1
+}
+
+#detailsTier1, #detailsTier2, #detailsTier3{
+    font-family: 'Dagger Square';
+    border-radius: 0.25rem;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+#contextTier1{
+    background-color: #92D4E7;
+    margin: 9% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%; /* Could be more or less, depending on screen size */
+    height: 60%;
+    text-align: left;
+}
+
+#contextTier2{
+    background-color: #F3EA5F;
+    margin: 9% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%; /* Could be more or less, depending on screen size */
+    height: 60%;
+    text-align: left;
+}
+
+#contextTier3{
+    background-color: #70C86B;
+    margin: 9% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%; /* Could be more or less, depending on screen size */
+    height: 60%;
+    text-align: left;
+}
+
+.close {
+    color: rgb(255, 255, 255);
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.open {
+    color: rgb(255, 255, 255);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.open:hover,
+.open:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contact {
+    color: rgb(255, 255, 255);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 3vh;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@font-face {
+    font-family: abel;
+    src: url("./assests/fonts/abel-regular.ttf");
+}
+
+@font-face {
+    font-family: Lazer84;
+    src: url("./assests/fonts/Lazer84.ttf");
+}
+
+@font-face {
+    font-family: 'Dagger Square';
+    src: url("./assests/fonts/DAGGERSQUARE.otf");
+}

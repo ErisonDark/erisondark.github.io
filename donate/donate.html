@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="stylesheet">
+    <title>AJUDA COM PIX</title>
+</head>
+<body>
+  <sectio class="s1">
+    <div class="main-container">
+      <div class="intro-wrapper">
+        <div class="nav-wrapper">
+          <div class="dots-wrapper">
+            <div id="dot-1" class="browser-dot"></div>
+            <div id="dot-2" class="browser-dot"></div>
+            <div id="dot-3" class="browser-dot"></div>
+          </div>
+      <ul id="navigation">
+        <li><a href="../index.html">Inicio</a></li> <!-- Voltar página inicial -->
+        <li><a href="../patro/patrocinio.html">patrocine-me</a></li> <!--patrocinio -->
+      </ul>
+    </div>
+
+
+      <!-- Configuração de navegação -->
+      <style>
+
+          ul {
+            list-style: none;
+          }
+
+          .s1{
+            background-color: var(--mainColor);
+            border-bottom: 1px solid var(--borderColor);
+            overflow: auto;
+          }
+          .main-container {
+            width: 1000px;
+            height: 0 auto;
+          }
+
+          .s2{
+          	background-color: var(--secondaryColor);
+          	border-bottom: 1px solid var(--borderColor);
+          	overflow: auto;
+          }
+
+          .main-container{
+        		width: 95%;
+        	}
+          .intro-wrapper{
+            background-color: var(--secondaryColor);
+            border: 1px solid var(--borderColor)
+            border-radius: 5px 5px 0 0;
+
+            -webkit-box-shadow: 1px 1px 3px -1px rgba(0,0,0,0.75);
+          	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+          	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+          	/*box shadow generator*/
+          	display: grid;
+          	grid-template-columns: 1fr 1fr;
+          	grid-template-areas:
+          	'nav-wrapper nav-wrapper'
+          	'left-column right-column'
+            ;
+          }
+
+          .browser-dot{
+          	background-color: black;
+          	height: 15px;
+          	width: 15px;
+          	border-radius: 50%;
+          	margin: 5px;
+          	-webkit-box-shadow: 1px 1px 3px -1px rgba(0,0,0,0.75);
+          	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+          	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+          }
+
+          #dot-1{
+          	background-color: #fc6058;
+          }
+
+          #dot-2{
+          	background-color: #fec02f;
+          }
+
+          #dot-3{
+          	background-color: #2aca3e;
+          }
+
+          .dots-wrapper{
+            display: flex;
+            padding: 10px;
+          }
+
+          .nav-wrapper{
+            grid-area: nav-wrapper;
+          	border-bottom: 1px solid var(--borderColor);
+          	display: flex;
+          	border-radius: 5px 5px 0 0;
+          	justify-content: space-between;
+          	align-items: center;
+          	background-color: var(--mainColor)
+          }
+
+
+
+        /*  @media screen and (max-width: 800px){ */
+            .intro-wrapper{
+              grid-template-columns: 1fr;
+          		grid-template-areas:
+          		'nav-wrapper'
+          		'left-column'
+          		'right-column'
+          		;
+          	}
+          	.right-column{
+          		justify-content: center;
+          	}
+          }
+
+
+          #navigation a{
+            font-size: 16px;
+            color: var(--mainText);
+            border-left: 1px solid #0000CD;
+            text-shadow: 0 0  1px rgba(0, 0, 205, 0.5);
+          }
+
+          #navigation li a {
+
+          }
+
+          #navigation{
+          	margin: 0;
+          	padding: 10px;
+          }
+
+          #navigation li{
+          	display: inline-block;
+          	margin-right: 5px;
+          	margin-left: 5px;
+          }
+
+      </style>
+
+
+
+    <!-- Contedudo do topo -->
+    <header>
+        <img
+            class="logo"
+            src="public/logo.png"
+            alt="DoePix">
+        <h2 style="color: blue">Me ajude continuar a pública vídeos para o canal</h2>
+        <p style="color: #f9f9f9">coloque o preço que você quiser.</p>
+        <p style="color: #f9f9f9">Isso me ajudará a engajar.</p>
+        <p style="color: #f9f9f9">Acada donate que ganho mais pão eu compro!! </p>
+
+        <button style="color: #f9f9f9">Quero ajudar</button>
+    </header>
+
+    <section class="form ">
+      <h2 style="color:"#f9f9f9">Chave PIX: </h2>
+        <form action="#" method="POST">
+          <h2 style="color: yellow;">84981839028</h2>
+        </form>
+    </section>
+
+
+    <!-- Formulario -->
+    <section>
+    </section>
+
+    <!-- conteudo central -->
+    <main>
+        <h2 style="color: white;">Muito obrigado <span>Deus te abençoe</span></h2>
+    <script src="/script.js"></script>
+</body>
+</html>
